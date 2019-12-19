@@ -1,0 +1,1038 @@
+{
+    "id": "f3dacd47ac7c262cdb8591c16b628aec",
+    "name": "Media OS - Town and Country API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "51113228754bb8f94999372051a6613d",
+            "name": "Content Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/content",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "title",
+                    "description": "Will return content where the title equals the passed in title.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "slug",
+                    "description": "The URL of the content on the web.  It's essentially everything to the right of the rightmost slash",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_id",
+                    "description": "The internal ID of the section on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_id",
+                    "description": "The internal ID of the subsection on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_id",
+                    "description": "The internal ID of the collection to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_id",
+                    "description": "The internal ID of the ad category to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "content_type_id",
+                    "description": "The internal ID of the content type to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publishedFrom",
+                    "description": "The publish date from which no content published earlier will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publishedTo",
+                    "description": "The publish date from which no content published later will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "visibility",
+                    "description": "1 for published articles only, 0 for draft articles, blank for both.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "all_images",
+                    "description": "Flag to determine whether all associated images are returned for a given article.  This includes processing image ID short codes in the article body and making them part of the image JSON structure.  When not enabled, a singlle headline image is returned for each article.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "get_image_cuts",
+                    "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "d0331c9461b6bf167a13e526da62a87e",
+            "name": "Article Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/articles",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "The primary key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "title",
+                    "description": "Will return content where the title equals the passed in title.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "slug",
+                    "description": "The URL of the content on the web.  It's essentially everything to the right of the rightmost slash",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editor",
+                    "description": "The internal ID of the editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editor2",
+                    "description": "The internal ID of the second editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editor3",
+                    "description": "The internal ID of the third editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_id",
+                    "description": "The internal ID of the section on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_id",
+                    "description": "The internal ID of the subsection on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_id",
+                    "description": "The internal ID of the collection to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_id",
+                    "description": "The internal ID of the ad category to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "content_type_id",
+                    "description": "The internal ID of the content type to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publishedFrom",
+                    "description": "The publish date from which no content published earlier will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publishedTo",
+                    "description": "The publish date from which no content published later will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "visibility",
+                    "description": "1 for published articles only, 0 for draft articles, blank for both.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "all_images",
+                    "description": "Flag to determine whether all associated images are returned for a given article.  This includes processing image ID short codes in the article body and making them part of the image JSON structure.  When not enabled, a singlle headline image is returned for each article.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "get_image_cuts",
+                    "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "25eed42b8dabd708af0f47c64d54ac2f",
+            "name": "Gallery Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/galleries",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_id",
+                    "description": "The primary key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "title",
+                    "description": "Will return content where the title equals the passed in title.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "slug",
+                    "description": "The URL of the content on the web.  It's essentially everything to the right of the rightmost slash",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editor",
+                    "description": "The internal ID of the editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editor2",
+                    "description": "The internal ID of the second editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editor3",
+                    "description": "The internal ID of the third editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_id",
+                    "description": "The internal ID of the section on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_id",
+                    "description": "The internal ID of the subsection on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_id",
+                    "description": "The internal ID of the collection to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_id",
+                    "description": "The internal ID of the ad category to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "content_type_id",
+                    "description": "The internal ID of the content type to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publishedFrom",
+                    "description": "The publish date from which no content published earlier will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "publishedTo",
+                    "description": "The publish date from which no content published later will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "visibility",
+                    "description": "1 for published articles only, 0 for draft articles, blank for both.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "get_image_cuts",
+                    "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f399e1f367f54358785d43f3f2f512f",
+            "name": "Image Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/images",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "The primary key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "image_title",
+                    "description": "Will return images where the title equals the passed in title.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_domain",
+                    "description": "The domain where the image is hosted. First of three fields to construct the actual URL (file_domain + file_path + file_name).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_path",
+                    "description": "The directory path where the image is hosted. Second of three fields to construct the actual URL (file_domain + file_path + file_name).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_name",
+                    "description": "The file name of the image. Third of three fields to construct the actual URL (file_domain + file_path + file_name).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_id",
+                    "description": "The internal ID of the editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_id",
+                    "description": "The internal ID of the section on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keywords",
+                    "description": "Keywords associated with the image (separated by spaces).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "The description of the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "Width of the image in pixels.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "Height of the image in pixels.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "get_image_cuts",
+                    "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b9cd87a32d75159f06fe9dea1c84878",
+            "name": "Editor Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/editors",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_id",
+                    "description": "The internal ID of the editor .",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_username",
+                    "description": "The username of the editor.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_firstname",
+                    "description": "The editor's first name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_lastname",
+                    "description": "The editor's last name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_fullname",
+                    "description": "The editor's full name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ed_email",
+                    "description": "The editor's email address.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "12ad595cfe822ef9febaf6394e2bace4",
+            "name": "Section Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/sections",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_id",
+                    "description": "The internal ID of the section on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_sitename",
+                    "description": "The name of the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_url",
+                    "description": "The url part of the section as used on the site.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "section_isactive",
+                    "description": "Is the section active or not.  Valid are '1' or '0'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "meta_title",
+                    "description": "The meta title of the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "meta_description",
+                    "description": "The meta description of the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "meta_keywords",
+                    "description": "The meta keywords for the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "50894a79af22deef4d1ef0aa87ccae47",
+            "name": "Subsection Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/subsections",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_id",
+                    "description": "The internal ID of the subsection on the site to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_sitename",
+                    "description": "The name of the subsection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_url",
+                    "description": "The url part of the subsection as used on the site.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_isactive",
+                    "description": "Is the subsection active or not.  Valid are '1' and '0'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subsection_parent_id",
+                    "description": "The section_id of the parent section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "meta_title",
+                    "description": "The meta title of the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "meta_description",
+                    "description": "The meta description of the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "meta_keywords",
+                    "description": "The meta keywords for the section.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order_by",
+                    "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        },
+        {
+            "id": "5bde92a1a449248e5f74e8ef6838535e",
+            "name": "Ad Category Search",
+            "url": "http:\/\/api.hearst.com\/api\/v1\/ad_categories",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_callback",
+                    "description": "The jsonp callback function name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_id",
+                    "description": "The internal ID of the ad category to pull data from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_name",
+                    "description": "The name of the ad category.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_prefix",
+                    "description": "The short name of the ad category.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ad_category_parent_id",
+                    "description": "The parent ad_category_id of the ad category.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ignore_cache",
+                    "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of records returned.  Allowable values are from 1 to 1,000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "rawModeData": ""
+        }
+    ]
+}
