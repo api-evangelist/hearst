@@ -1,0 +1,184 @@
+{
+    "name": "Hearst",
+    "description": "Hearst is one of the largest diversified media and information companies. www.hearst.com",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/9076-hearst-developers.jpg",
+    "tags": [
+        "api not found",
+        "have api",
+        "have swagger",
+        "isp",
+        "profile",
+        "target"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/hearst\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Hearst",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/9076-hearst-developers.jpg",
+            "humanURL": "http:\/\/developer.hearst.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/hearst.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/hearst-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/hearst-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Media OS - Town and Country API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/9076-hearst-developers.jpg",
+            "humanURL": "http:\/\/developer.hearst.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/media-os--town-and-country-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--town-and-country-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--town-and-country-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Media OS - Veranda API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/9076-hearst-developers.jpg",
+            "humanURL": "http:\/\/developer.hearst.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/media-os--veranda-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--veranda-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--veranda-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Contact Form",
+            "url": "http:\/\/developer.hearst.com\/contact"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/hearstcorporation"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/developer.hearst.com\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "http:\/\/developer.hearst.com\/docs"
+        },
+        {
+            "type": "Email",
+            "url": "svalenza@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "kfs-public-relations@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "cosmo_letters@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "countryliving@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "esquire@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "FNMeditor@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "ghletters@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "bazaar@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "hgtvmagazine@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "youropinions@hearst.com"
+        },
+        {
+            "type": "Email",
+            "url": "api@hearst.com"
+        },
+        {
+            "type": "Explorer",
+            "url": "http:\/\/developer.hearst.com\/io-docs"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/9076-2019-09-04-00-47-09.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/9076-2019-09-04-00-47-16.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/9076-2019-09-04-00-47-24.json"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/secure.mashery.com\/login\/developer.hearst.com\/"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "http:\/\/developer.hearst.com\/API_Terms_of_Use"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/Hearst"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/HearstAPI"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/developer.hearst.com"
+        }
+    ]
+}
