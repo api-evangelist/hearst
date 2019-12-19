@@ -1,0 +1,732 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1",
+        "title": "Media OS - Town and Country API",
+        "description": "Test our API services using I\/O Docs. ",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.hearst.com\/api\/v1"
+    ],
+    "paths": {
+        "\/content": {
+            "get": {
+                "summary": "Content Search",
+                "description": "",
+                "operationId": "ContentSearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "Will return content where the title equals the passed in title."
+                    },
+                    {
+                        "name": "slug",
+                        "in": "query",
+                        "description": "The URL of the content on the web.  It's essentially everything to the right of the rightmost slash"
+                    },
+                    {
+                        "name": "section_id",
+                        "in": "query",
+                        "description": "The internal ID of the section on the site to pull data from."
+                    },
+                    {
+                        "name": "subsection_id",
+                        "in": "query",
+                        "description": "The internal ID of the subsection on the site to pull data from."
+                    },
+                    {
+                        "name": "collection_id",
+                        "in": "query",
+                        "description": "The internal ID of the collection to pull data from."
+                    },
+                    {
+                        "name": "ad_category_id",
+                        "in": "query",
+                        "description": "The internal ID of the ad category to pull data from."
+                    },
+                    {
+                        "name": "content_type_id",
+                        "in": "query",
+                        "description": "The internal ID of the content type to pull data from."
+                    },
+                    {
+                        "name": "publishedFrom",
+                        "in": "query",
+                        "description": "The publish date from which no content published earlier will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm."
+                    },
+                    {
+                        "name": "publishedTo",
+                        "in": "query",
+                        "description": "The publish date from which no content published later will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm"
+                    },
+                    {
+                        "name": "visibility",
+                        "in": "query",
+                        "description": "1 for published articles only, 0 for draft articles, blank for both."
+                    },
+                    {
+                        "name": "all_images",
+                        "in": "query",
+                        "description": "Flag to determine whether all associated images are returned for a given article.  This includes processing image ID short codes in the article body and making them part of the image JSON structure.  When not enabled, a singlle headline image is returned for each article.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "get_image_cuts",
+                        "in": "query",
+                        "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/articles": {
+            "get": {
+                "summary": "Article Search",
+                "description": "",
+                "operationId": "ArticleSearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "The primary key."
+                    },
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "Will return content where the title equals the passed in title."
+                    },
+                    {
+                        "name": "slug",
+                        "in": "query",
+                        "description": "The URL of the content on the web.  It's essentially everything to the right of the rightmost slash"
+                    },
+                    {
+                        "name": "editor",
+                        "in": "query",
+                        "description": "The internal ID of the editor ."
+                    },
+                    {
+                        "name": "editor2",
+                        "in": "query",
+                        "description": "The internal ID of the second editor ."
+                    },
+                    {
+                        "name": "editor3",
+                        "in": "query",
+                        "description": "The internal ID of the third editor ."
+                    },
+                    {
+                        "name": "section_id",
+                        "in": "query",
+                        "description": "The internal ID of the section on the site to pull data from."
+                    },
+                    {
+                        "name": "subsection_id",
+                        "in": "query",
+                        "description": "The internal ID of the subsection on the site to pull data from."
+                    },
+                    {
+                        "name": "collection_id",
+                        "in": "query",
+                        "description": "The internal ID of the collection to pull data from."
+                    },
+                    {
+                        "name": "ad_category_id",
+                        "in": "query",
+                        "description": "The internal ID of the ad category to pull data from."
+                    },
+                    {
+                        "name": "content_type_id",
+                        "in": "query",
+                        "description": "The internal ID of the content type to pull data from."
+                    },
+                    {
+                        "name": "publishedFrom",
+                        "in": "query",
+                        "description": "The publish date from which no content published earlier will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm."
+                    },
+                    {
+                        "name": "publishedTo",
+                        "in": "query",
+                        "description": "The publish date from which no content published later will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm"
+                    },
+                    {
+                        "name": "visibility",
+                        "in": "query",
+                        "description": "1 for published articles only, 0 for draft articles, blank for both."
+                    },
+                    {
+                        "name": "all_images",
+                        "in": "query",
+                        "description": "Flag to determine whether all associated images are returned for a given article.  This includes processing image ID short codes in the article body and making them part of the image JSON structure.  When not enabled, a singlle headline image is returned for each article.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "get_image_cuts",
+                        "in": "query",
+                        "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/galleries": {
+            "get": {
+                "summary": "Gallery Search",
+                "description": "",
+                "operationId": "GallerySearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "group_id",
+                        "in": "query",
+                        "description": "The primary key."
+                    },
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "Will return content where the title equals the passed in title."
+                    },
+                    {
+                        "name": "slug",
+                        "in": "query",
+                        "description": "The URL of the content on the web.  It's essentially everything to the right of the rightmost slash"
+                    },
+                    {
+                        "name": "editor",
+                        "in": "query",
+                        "description": "The internal ID of the editor ."
+                    },
+                    {
+                        "name": "editor2",
+                        "in": "query",
+                        "description": "The internal ID of the second editor ."
+                    },
+                    {
+                        "name": "editor3",
+                        "in": "query",
+                        "description": "The internal ID of the third editor ."
+                    },
+                    {
+                        "name": "section_id",
+                        "in": "query",
+                        "description": "The internal ID of the section on the site to pull data from."
+                    },
+                    {
+                        "name": "subsection_id",
+                        "in": "query",
+                        "description": "The internal ID of the subsection on the site to pull data from."
+                    },
+                    {
+                        "name": "collection_id",
+                        "in": "query",
+                        "description": "The internal ID of the collection to pull data from."
+                    },
+                    {
+                        "name": "ad_category_id",
+                        "in": "query",
+                        "description": "The internal ID of the ad category to pull data from."
+                    },
+                    {
+                        "name": "content_type_id",
+                        "in": "query",
+                        "description": "The internal ID of the content type to pull data from."
+                    },
+                    {
+                        "name": "publishedFrom",
+                        "in": "query",
+                        "description": "The publish date from which no content published earlier will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm."
+                    },
+                    {
+                        "name": "publishedTo",
+                        "in": "query",
+                        "description": "The publish date from which no content published later will be returned.  Format YYYY-MM-DD or YYYY-MM-DDThh:mm"
+                    },
+                    {
+                        "name": "visibility",
+                        "in": "query",
+                        "description": "1 for published articles only, 0 for draft articles, blank for both."
+                    },
+                    {
+                        "name": "get_image_cuts",
+                        "in": "query",
+                        "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/images": {
+            "get": {
+                "summary": "Image Search",
+                "description": "",
+                "operationId": "ImageSearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "The primary key."
+                    },
+                    {
+                        "name": "image_title",
+                        "in": "query",
+                        "description": "Will return images where the title equals the passed in title."
+                    },
+                    {
+                        "name": "file_domain",
+                        "in": "query",
+                        "description": "The domain where the image is hosted. First of three fields to construct the actual URL (file_domain + file_path + file_name)."
+                    },
+                    {
+                        "name": "file_path",
+                        "in": "query",
+                        "description": "The directory path where the image is hosted. Second of three fields to construct the actual URL (file_domain + file_path + file_name)."
+                    },
+                    {
+                        "name": "file_name",
+                        "in": "query",
+                        "description": "The file name of the image. Third of three fields to construct the actual URL (file_domain + file_path + file_name)."
+                    },
+                    {
+                        "name": "ed_id",
+                        "in": "query",
+                        "description": "The internal ID of the editor ."
+                    },
+                    {
+                        "name": "section_id",
+                        "in": "query",
+                        "description": "The internal ID of the section on the site to pull data from."
+                    },
+                    {
+                        "name": "keywords",
+                        "in": "query",
+                        "description": "Keywords associated with the image (separated by spaces)."
+                    },
+                    {
+                        "name": "description",
+                        "in": "query",
+                        "description": "The description of the image."
+                    },
+                    {
+                        "name": "width",
+                        "in": "query",
+                        "description": "Width of the image in pixels."
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "Height of the image in pixels."
+                    },
+                    {
+                        "name": "get_image_cuts",
+                        "in": "query",
+                        "description": "Flag to determine whether or not to retrieve all associated image cuts for every image.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/editors": {
+            "get": {
+                "summary": "Editor Search",
+                "description": "",
+                "operationId": "EditorSearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "ed_id",
+                        "in": "query",
+                        "description": "The internal ID of the editor ."
+                    },
+                    {
+                        "name": "ed_username",
+                        "in": "query",
+                        "description": "The username of the editor."
+                    },
+                    {
+                        "name": "ed_firstname",
+                        "in": "query",
+                        "description": "The editor's first name."
+                    },
+                    {
+                        "name": "ed_lastname",
+                        "in": "query",
+                        "description": "The editor's last name."
+                    },
+                    {
+                        "name": "ed_fullname",
+                        "in": "query",
+                        "description": "The editor's full name."
+                    },
+                    {
+                        "name": "ed_email",
+                        "in": "query",
+                        "description": "The editor's email address."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sections": {
+            "get": {
+                "summary": "Section Search",
+                "description": "",
+                "operationId": "SectionSearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "section_id",
+                        "in": "query",
+                        "description": "The internal ID of the section on the site to pull data from."
+                    },
+                    {
+                        "name": "section_sitename",
+                        "in": "query",
+                        "description": "The name of the section."
+                    },
+                    {
+                        "name": "section_url",
+                        "in": "query",
+                        "description": "The url part of the section as used on the site."
+                    },
+                    {
+                        "name": "section_isactive",
+                        "in": "query",
+                        "description": "Is the section active or not.  Valid are '1' or '0'."
+                    },
+                    {
+                        "name": "meta_title",
+                        "in": "query",
+                        "description": "The meta title of the section."
+                    },
+                    {
+                        "name": "meta_description",
+                        "in": "query",
+                        "description": "The meta description of the section."
+                    },
+                    {
+                        "name": "meta_keywords",
+                        "in": "query",
+                        "description": "The meta keywords for the section."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/subsections": {
+            "get": {
+                "summary": "Subsection Search",
+                "description": "",
+                "operationId": "SubsectionSearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "subsection_id",
+                        "in": "query",
+                        "description": "The internal ID of the subsection on the site to pull data from."
+                    },
+                    {
+                        "name": "subsection_sitename",
+                        "in": "query",
+                        "description": "The name of the subsection."
+                    },
+                    {
+                        "name": "subsection_url",
+                        "in": "query",
+                        "description": "The url part of the subsection as used on the site."
+                    },
+                    {
+                        "name": "subsection_isactive",
+                        "in": "query",
+                        "description": "Is the subsection active or not.  Valid are '1' and '0'."
+                    },
+                    {
+                        "name": "subsection_parent_id",
+                        "in": "query",
+                        "description": "The section_id of the parent section."
+                    },
+                    {
+                        "name": "meta_title",
+                        "in": "query",
+                        "description": "The meta title of the section."
+                    },
+                    {
+                        "name": "meta_description",
+                        "in": "query",
+                        "description": "The meta description of the section."
+                    },
+                    {
+                        "name": "meta_keywords",
+                        "in": "query",
+                        "description": "The meta keywords for the section."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    },
+                    {
+                        "name": "order_by",
+                        "in": "query",
+                        "description": "Sort order for results returned.  Please specify the field name and sort order (asc\/desc) separated with a space."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/ad_categories": {
+            "get": {
+                "summary": "Ad Category Search",
+                "description": "",
+                "operationId": "AdCategorySearchTownandCountryEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_callback",
+                        "in": "query",
+                        "description": "The jsonp callback function name."
+                    },
+                    {
+                        "name": "ad_category_id",
+                        "in": "query",
+                        "description": "The internal ID of the ad category to pull data from."
+                    },
+                    {
+                        "name": "ad_category_name",
+                        "in": "query",
+                        "description": "The name of the ad category."
+                    },
+                    {
+                        "name": "ad_category_prefix",
+                        "in": "query",
+                        "description": "The short name of the ad category."
+                    },
+                    {
+                        "name": "ad_category_parent_id",
+                        "in": "query",
+                        "description": "The parent ad_category_id of the ad category."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "List of fields to return.  Default set of fields is documented in the API Settings document. Use * for all fields."
+                    },
+                    {
+                        "name": "ignore_cache",
+                        "in": "query",
+                        "description": "Flag as to whether or not to ingore internal caching.  Values are 0 or 1."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of records returned.  Allowable values are from 1 to 1,000."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
