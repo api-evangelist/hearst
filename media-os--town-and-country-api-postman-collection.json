@@ -1,5 +1,5 @@
 {
-    "id": "f3dacd47ac7c262cdb8591c16b628aec",
+    "id": "2e9bee75f4632b20215bbe268ebcff32",
     "name": "Media OS - Town and Country API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "51113228754bb8f94999372051a6613d",
+            "id": "965cda48d86716636814637f608a83b3",
             "name": "Content Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/content",
             "description": "",
@@ -149,11 +149,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "d0331c9461b6bf167a13e526da62a87e",
+            "id": "7cd3e1684f26043f45a995ffceedfcf9",
             "name": "Article Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/articles",
             "description": "",
@@ -320,11 +320,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "25eed42b8dabd708af0f47c64d54ac2f",
+            "id": "ffc473bfc86f9572e879f9038bdb33a1",
             "name": "Gallery Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/galleries",
             "description": "",
@@ -484,11 +484,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "2f399e1f367f54358785d43f3f2f512f",
+            "id": "0b5cc0b60ac95e1cfa3ea608df47e484",
             "name": "Image Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/images",
             "description": "",
@@ -627,11 +627,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "6b9cd87a32d75159f06fe9dea1c84878",
+            "id": "cedf86927e64f6a5c493a11b8b108883",
             "name": "Editor Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/editors",
             "description": "",
@@ -728,11 +728,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "12ad595cfe822ef9febaf6394e2bace4",
+            "id": "aa735b0bce25d92a2aa85fd01cd093c8",
             "name": "Section Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/sections",
             "description": "",
@@ -836,11 +836,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "50894a79af22deef4d1ef0aa87ccae47",
+            "id": "cc099b98612d44e8b28fe21e3e0ac09c",
             "name": "Subsection Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/subsections",
             "description": "",
@@ -951,11 +951,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         },
         {
-            "id": "5bde92a1a449248e5f74e8ef6838535e",
+            "id": "99845d3516b8d2014afec0676b1f5c15",
             "name": "Ad Category Search",
             "url": "http:\/\/api.hearst.com\/api\/v1\/ad_categories",
             "description": "",
@@ -1031,7 +1031,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f3dacd47ac7c262cdb8591c16b628aec",
+            "collectionId": "2e9bee75f4632b20215bbe268ebcff32",
             "rawModeData": ""
         }
     ]
