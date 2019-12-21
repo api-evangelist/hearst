@@ -10,8 +10,8 @@
         "profile",
         "target"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/hearst\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -25,15 +25,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/hearst.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/hearst\/master\/hearst-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/hearst-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/hearst-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/hearst.json"
                 }
             ]
         },
@@ -47,15 +43,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/media-os--town-and-country-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/hearst\/master\/media-os--town-and-country-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--town-and-country-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--town-and-country-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/media-os--town-and-country-api.json"
                 }
             ]
         },
@@ -69,21 +61,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/media-os--veranda-api.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/hearst\/master\/media-os--veranda-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--veranda-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/media-os--veranda-api-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/media-os--veranda-api.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Contact Form",
             "url": "http:\/\/developer.hearst.com\/contact"
